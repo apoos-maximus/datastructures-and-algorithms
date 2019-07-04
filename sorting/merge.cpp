@@ -24,9 +24,9 @@ using namespace std;
             stringstream(token)>>item;
             a.push_back(item);
         }
-        for(vector<int> :: iterator i = a.begin(); i != a.end(); i++){
-            cout<<*i<<" ";
-        }
+        // for(vector<int> :: iterator i = a.begin(); i != a.end(); i++){
+        //     cout<<*i<<" ";
+        // }
         mergesort(a);        
         cout<<endl;
         for(vector<int> :: iterator i = a.begin(); i != a.end(); i++){

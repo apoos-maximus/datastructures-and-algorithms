@@ -77,8 +77,12 @@ void push(nodePtr *stackPtr, int el)
 {
 
     nodePtr newNode =  malloc( sizeof( NODE ) );
+    if ( newNode != NULL)
+    {
     newNode->data = el;
     newNode->link = NULL;
+    
+    }
     
     if((*stackPtr) == NULL)
     {
